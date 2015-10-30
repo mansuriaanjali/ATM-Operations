@@ -150,7 +150,7 @@ public class Message
      */
     public int getToAccount()
     {
-        return toAccount;
+        return fromAccount;
     }
     
     /** Accessor for acmount
