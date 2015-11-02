@@ -41,7 +41,7 @@ class SimReceiptPrinter extends Panel
             }
         });
         
-        take.setVisible(false);
+        take.setVisible(true);
     }
     
     /** Print line to receipt
@@ -57,8 +57,6 @@ class SimReceiptPrinter extends Panel
         }
         catch (InterruptedException e)
         { }
-
-       take.setVisible(true);
     }        
 
     /** Simulated printout of receipt

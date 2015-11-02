@@ -135,7 +135,7 @@ public class SimulatedBank
         // Return updated balances
         
         balances.setBalances(BALANCE [ accountNumber ], 
-                             AVAILABLE_BALANCE [ accountNumber ]);
+                             BALANCE [ accountNumber ]);
         
         return new Success();
     }    
@@ -157,9 +157,6 @@ public class SimulatedBank
         int toAccountNumber = ACCOUNT_NUMBER [ cardNumber ] [ message.getToAccount() ];
         if (toAccountNumber == 0)
             return new Failure("Invalid to account type");
-        if (fromAccountNumber == toAccountNumber)
-            return new Failure("Can't transfer money from\n" +
-                    "an account to itself");
     
         Money amount = message.getAmount();
         

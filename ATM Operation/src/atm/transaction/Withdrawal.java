@@ -39,7 +39,7 @@ public class Withdrawal extends Transaction
         String [] amountOptions = { "$20", "$40", "$60", "$100", "$200" };
         Money [] amountValues = { 
                                   new Money(20), new Money(40), new Money(60),
-                                  new Money(100), new Money(200)
+                                  new Money(60), new Money(100)
                                 };
                                   
         String amountMessage = "";
